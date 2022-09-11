@@ -1,8 +1,9 @@
 import { isSave } from "../betterrolls5e.js";
 import { getSettings } from "../settings.js";
-import { DND5E } from "../../../../systems/dnd5e/dnd5e.mjs";
+import { DND5E, dice } from "../../../../systems/dnd5e/dnd5e.mjs";
 
 export const dnd5e = DND5E;
+export const d20Roll = dice.d20Roll;
 
 /**
  * Shorthand for both game.i18n.format() and game.i18n.localize() depending

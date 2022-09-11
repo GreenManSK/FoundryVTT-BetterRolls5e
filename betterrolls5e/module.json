@@ -6,7 +6,7 @@
 	"authors": [],
 	"url": "https://github.com/GreenManSK/FoundryVTT-BetterRolls5e/tree/master/betterrolls5e",
 	"flags": {},
-	"version": "1.8.0",
+	"version": "1.8.1",
 	"compatibility": {
 		"minimum": 9,
 		"verified": 9
@@ -77,7 +77,7 @@
 	},
 	"socket": true,
 	"manifest": "https://raw.githubusercontent.com/GreenManSK/FoundryVTT-BetterRolls5e/master/betterrolls5e/module.json",
-	"download": "https://github.com/GreenManSK/FoundryVTT-BetterRolls5e/releases/download/v1.8.0/module.zip",
+	"download": "https://github.com/GreenManSK/FoundryVTT-BetterRolls5e/releases/download/v1.8.1/module.zip",
 	"protected": false,
 	"coreTranslation": false,
 	"minimumSystemVersion": "1.5.2",

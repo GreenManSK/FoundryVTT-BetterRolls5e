@@ -1,8 +1,7 @@
 import { getSettings } from "../settings.js";
 import { libWrapper } from "./libWrapper.js";
 
-import { d20Roll } from "../../../../systems/dnd5e/module/dice.js";
-import { dnd5e, i18n, Utils } from "../utils/index.js";
+import { dnd5e, i18n, Utils, d20Roll } from "../utils/index.js";
 import { CustomRoll } from "../custom-roll.js";
 
 export function patchCoreFunctions() {
