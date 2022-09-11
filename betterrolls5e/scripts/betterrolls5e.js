@@ -1,4 +1,4 @@
-import { DND5E } from "../../../systems/dnd5e/module/config.js";
+import { DND5E } from "../../../systems/dnd5e/dnd5e.mjs";
 import { CustomRoll, CustomItemRoll } from "./custom-roll.js";
 import { i18n, Utils, ItemUtils } from "./utils/index.js";
 import { getSettings } from "./settings.js";
