@@ -448,7 +448,7 @@ return itemToRoll.roll({ vanilla: ${vanilla} });
 		return actor;
 	}
 
-	Hooks._hooks.hotbarDrop = [(bar, data, slot) => {
+	const newEvents = [(bar, data, slot) => {
 		if ( data.type !== "Item" ) return true;
 		if (event && event.altKey) { // not using isAlt(event) because it's not related to alternative roll
 			assignMacro(data, slot, "vanillaRoll");
@@ -456,7 +456,9 @@ return itemToRoll.roll({ vanilla: ${vanilla} });
 			assignMacro(data, slot, "id");
 		}
 		return false;
-	}].concat(Hooks._hooks.hotbarDrop || []);
+	}].concat(Hooks.events.hotbarDrop || []);
+	Hooks.events.hotbarDrop.splice(0, Hooks.events.hotbarDrop.length);
+	Hooks.events.hotbarDrop.push(...newEvents);
 
 	return {
 		version: Utils.getVersion(),

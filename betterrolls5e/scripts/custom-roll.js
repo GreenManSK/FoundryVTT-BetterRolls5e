@@ -195,7 +195,7 @@ export class CustomItemRoll {
 	}
 
 	static fromMessage(message) {
-		const data = message.data.flags.betterrolls5e;
+		const data = message.flags.betterrolls5e;
 		const roll = new CustomItemRoll(null, data?.params ?? {}, data?.fields ?? []);
 		roll._currentId = -1;
 		roll.messageId = message.id;

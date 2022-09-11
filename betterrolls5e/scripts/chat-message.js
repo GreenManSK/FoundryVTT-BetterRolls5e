@@ -32,7 +32,7 @@ export class BetterRollsChatCard {
 		// and we can't do anything except rely on closures to handle those events.
 		this.id = message.id;
 		this.roll = CustomItemRoll.fromMessage(message);
-		this.speaker = game.actors.get(message.data.speaker.actor);
+		this.speaker = game.actors.get(message.speaker.actor);
 		message.BetterRoll = this.roll;
 
 		// Hide Save DCs
